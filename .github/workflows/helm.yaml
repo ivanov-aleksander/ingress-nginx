@@ -9,8 +9,6 @@ jobs:
 
   changes:
     runs-on: ubuntu-latest
-    if: |
-      (github.repository == 'kubernetes/ingress-nginx')
     outputs:
       docs: ${{ steps.filter.outputs.docs }}
       charts: ${{ steps.filter.outputs.charts }}
